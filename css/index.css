@@ -11,8 +11,8 @@ body {
 #canvas {
     position: relative;
     margin: 0;
-    width: fit-content;
     height: fit-content;
+    width: fit-content;
 }
 
 #canvas * {
@@ -25,15 +25,15 @@ body {
 }
 
 #chara {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
     margin: auto;
     opacity: 0.2;
     height: 500%;
-    max-height: 1080px;
-    max-width: 1920px;
+    max-height: 1000px;
+    max-width: 1900px;
 }
 
 img.background {
@@ -106,8 +106,8 @@ img.background {
 }
 
 #resource-table img{
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 85px;
+    max-height: 85px;
 }
 
 #location-table {
