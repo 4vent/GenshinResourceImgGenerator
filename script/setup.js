@@ -233,6 +233,10 @@ async function main() {
             break
     }
     
+    const title = document.getElementById("title");
+    title.innerHTML = d["名前"] + "<br>Lv.・天賦MAX 必要素材"
+
+    document.title = d["名前"] + "の育成素材"
 }
 
 document.addEventListener("DOMContentLoaded", e => {
