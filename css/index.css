@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('../font/font.ttf') format('truetype');
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+#canvas {
+    position: relative;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+#canvas * {
+    font-family: 'myfont';
+    color: white;
+}
+
+#canvas > *:not(.noabsolute) {
+    position: absolute;
+}
+
+#chara {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.2;
+    height: 500%;
+    max-height: 1080px;
+    max-width: 1920px;
+}
+
+img.background {
+    height: 1080px;
+}
+
+.data-table {
+    border-collapse: collapse;
+}
+
+.data-table * {
+    font-size: 20px;
+}
+
+.data-table tr:first-child{
+    border-width: 0;
+}
+
+.data-table tr{
+    border-width: 2px 0 0 0;
+    border-color: white;
+    border-style: dashed;
+    display: flex;
+}
+
+.data-table tr:not(:last-child, :first-child) > td{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.data-table th,
+.data-table td {
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+}
+
+.data-table th {
+}
+
+.data-table td {
+    height: 34px;
+}
+
+.data-table th > img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+#talent-table {
+    left: 45px;
+    top: 70px;
+}
+
+#ascension-table {
+    right: 45px;
+    top: 70px;
+}
+
+#levelup-table {
+    right: 45px;
+    top: 380px;
+}
+
+#resource-table {
+    left: 690px;
+    top: 140px;
+    font-size: 40px;
+}
+
+#resource-table img{
+    max-width: 90px;
+    max-height: 90px;
+}
+
+#location-table {
+    left: 60px;
+    bottom: 140px;
+    font-size: 40px;
+}
+
+#location-table img{
+    max-width: 90px;
+    max-height: 90px;
+}
+
+#location-table td {
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 10px;
+    font-size: 35px;
+    margin: auto;
+}
